@@ -51,37 +51,91 @@ h1 {
     width: 70px;
     height: auto;
 }
+/* Layout for About Me Section */
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 0 20px;
+    text-align: left;
+}
 
-/* Profile Image */
 .profile-image {
-        width: 33%;
-        border-radius: 20px;
-        border: 25px solid white; 
-        margin-top: 40px; 
-    
+    width: 450px;
+    max-width: 90vw;
+    border-radius: 20px;
+    border: 15px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 130px; /* ← Add this line or increase it if already there */
 }
 
-/* About Me Heading */
-.about-container h3 {
+.about-text {
+    max-width: 600px;
+    flex: 1;
+}
+
+.about-text h3 {
     font-family: 'Corben', serif;
-    font-size: 28px; 
-    color: #d81b60; 
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 30px;
+    color: #d81b60;
+    margin-top: 0;
+    margin-left: 170px
 }
 
-/* Main Content */
-.about-container p {
+.about-text p {
     background: white;
     padding: 20px;
-    line-height: 1.8; 
-    width: 50%;
-    margin: 30px auto;
-    border-radius: 50px;
+    line-height: 1.8;
+    border-radius: 30px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     font-size: large;
+    margin: 0;
 }
 
+
+/* Extracurriculars */
+.extracurriculars h2 {
+    font-family: 'Corben', serif;
+    font-size: 36px;
+    color: #d81b60;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+.card img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.accordion {
+    background-color: #d81b60;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.panel {
+    display: none;
+    padding: 10px;
+    text-align: left;
+}
 
 /* Footer */
 footer {
